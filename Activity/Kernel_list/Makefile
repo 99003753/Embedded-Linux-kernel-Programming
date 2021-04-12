@@ -1,6 +1,6 @@
   
 obj-m += ioctl_listfn.o
-KSRC=/home/user/workspace/kernellinux/linux-4.14.202
+KSRC=/home/user/KSRC
 all:
 	make -C ${KSRC} M=${PWD} modules ARCH=arm CROSS_COMPILE=arm-linux-gnueabi-
 clean:
